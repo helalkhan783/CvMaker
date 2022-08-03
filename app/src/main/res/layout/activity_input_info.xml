@@ -778,8 +778,7 @@
                         android:layout_width="match_parent"
 
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_top_ten_dp"
-                        android:orientation="vertical"
+                         android:orientation="vertical"
                         android:padding="@dimen/pading_five_dp">
 
                         <TextView
@@ -797,7 +796,7 @@
                             android:layout_height="@dimen/et_hieght"
                             android:background="@drawable/et_shape"
                             android:hint="Skill"
-                            android:inputType="text"
+                            android:inputType="textMultiLine"
                             android:paddingLeft="@dimen/left_pading"
                             android:textColor="@color/black"
                             android:textColorHint="@color/gray_one"
@@ -809,10 +808,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/btn_shape"
+                         android:background="@drawable/btn_shape"
                         android:text="Next"
                         android:textColor="@color/white"
+                        android:layout_marginBottom="35dp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </ScrollView>

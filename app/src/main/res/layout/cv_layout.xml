@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -13,30 +14,30 @@
             <LinearLayout
 
                 android:layout_width="match_parent"
-                android:background="@color/white"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
+                android:background="@color/white"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                     >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/nameTv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:text="Resume of Helal Uddin"
                         android:textColor="@color/text_color"
-                        android:gravity="center"
                         android:textSize="@dimen/sixteen_sp"
                         android:textStyle="bold" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/btn_shape"/>
+                        android:background="@drawable/btn_shape" />
 
 
                 </LinearLayout>
@@ -50,8 +51,8 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/profile_bg"
                         android:scaleType="centerCrop"
@@ -115,7 +116,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/btn_shape"/>
+                        android:background="@drawable/btn_shape" />
 
 
                 </LinearLayout>
@@ -130,6 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:maxLines="4"
                         android:text="It mentions the goal and objective of your career.
 Even though it is not a strict requirement to include a resume objective in your resume, a well-written objective can help you catch the attention of the recruiter.
 But, before you build that powerful resume and start applying, make sure you know ways to find a great place to work.
@@ -156,7 +158,7 @@ But, before you build that powerful resume and start applying, make sure you kno
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="@drawable/btn_shape"/>
+                        android:background="@drawable/btn_shape" />
 
 
                 </LinearLayout>
@@ -216,6 +218,7 @@ But, before you build that powerful resume and start applying, make sure you kno
                             android:textSize="@dimen/fourteen_sp" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -373,6 +376,7 @@ But, before you build that powerful resume and start applying, make sure you kno
                             android:textSize="@dimen/fourteen_sp" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -397,6 +401,7 @@ But, before you build that powerful resume and start applying, make sure you kno
                             android:textSize="@dimen/fourteen_sp" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -446,6 +451,7 @@ But, before you build that powerful resume and start applying, make sure you kno
 
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -527,6 +533,7 @@ But, before you build that powerful resume and start applying, make sure you kno
                             android:textSize="@dimen/fourteen_sp" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -551,6 +558,7 @@ But, before you build that powerful resume and start applying, make sure you kno
                             android:textSize="@dimen/fourteen_sp" />
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -600,30 +608,29 @@ But, before you build that powerful resume and start applying, make sure you kno
 
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-android:layout_marginBottom="10dp"                    android:orientation="vertical">
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        >
-
+                        android:layout_height="wrap_content">
 
 
                         <TextView
                             android:id="@+id/skillTv"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:maxLines="3"
                             android:text=": Borhunuddin Govt College"
                             android:textColor="@color/black"
                             android:textSize="@dimen/fourteen_sp" />
 
                     </LinearLayout>
-
-
 
 
                 </LinearLayout>

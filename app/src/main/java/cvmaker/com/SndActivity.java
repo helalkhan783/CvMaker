@@ -87,10 +87,6 @@ public class SndActivity extends Baseactivity {
         binding.ok.sscGpa.setText(": " + intent.getStringExtra("sscGpa"));
 
         binding.ok.skillTv.setText("" + intent.getStringExtra("skill"));
-    /*    Bitmap image = (Bitmap) intent.getParcelableExtra("bitmap");
-        binding.ok.imageView.setImageBitmap(image);*/
-
-
     }
 
     private void savePdf() {
