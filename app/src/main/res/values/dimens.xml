@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sixteen_sp_size">16sp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="fourteen_sp">13sp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="et_hieght">35dp</dimen>
+    <dimen name="left_pading">10dp</dimen>
+    <dimen name="margin_top_ten_dp">10dp</dimen>
+    <dimen name="pading_five_dp">5dp</dimen>
+</resources>

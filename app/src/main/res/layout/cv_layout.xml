@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                     >
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Resume of Helal Uddin"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/sixteen_sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/profile_bg"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/launcher"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mailing Address"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/sixteen_sp"
+
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Helal Uddin\nJatrabari Dhaka\nmdhelalcse2018@gmail.com\nMob:01730259204"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fourteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Career Objective"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/sixteen_sp"
+
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/objective"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="It mentions the goal and objective of your career.
+Even though it is not a strict requirement to include a resume objective in your resume, a well-written objective can help you catch the attention of the recruiter.
+But, before you build that powerful resume and start applying, make sure you know ways to find a great place to work.
+ "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fourteen_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Educational Qualification"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/sixteen_sp"
+
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Graduation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/graduation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": BSc in Computer Science &amp; Engineering"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="GPA"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/bscGpa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": 3.00"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Department"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/bscDept"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Computer Science and Engineering"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="University"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/university"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Daffoldil International University "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Higher Secoundary Certificate (HSC)"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/sixteen_sp"
+
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="College"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/collegeName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Govt Abdul Jabbar College"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Department"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hscDept"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Science"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Passing Year"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hscPassingYear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": 2014"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Board"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hscBoard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Barishal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="GPA"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/hscGpa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": 4.50"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secoundary School Certificate (SSC)"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/sixteen_sp"
+
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="School"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/schoolName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Borhunuddin Govt College"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Department"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sscDept"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Science"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Passing Year"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sscPassingYear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": 2014"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Board"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sscBoard"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": Barishal"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2.5">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="GPA"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sscGpa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:text=": 4.89"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skill/Experience"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/sixteen_sp"
+
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/btn_shape" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+android:layout_marginBottom="10dp"                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/skillTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=": Borhunuddin Govt College"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

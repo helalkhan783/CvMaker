@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CvMaker/app/src/main/res/drawable/bg_circle.xml" value="0.1" />
+        <entry key="..\:/CvMaker/app/src/main/res/drawable/et_shape.xml" value="0.177" />
+        <entry key="..\:/CvMaker/app/src/main/res/drawable/save.xml" value="0.1655" />
+        <entry key="..\:/CvMaker/app/src/main/res/layout/activity_input_info.xml" value="0.25" />
+        <entry key="..\:/CvMaker/app/src/main/res/layout/activity_item.xml" value="0.25" />
+        <entry key="..\:/CvMaker/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/CvMaker/app/src/main/res/layout/activity_snd.xml" value="0.21" />
+        <entry key="..\:/CvMaker/app/src/main/res/layout/cv_layout.xml" value="0.25" />
+        <entry key="..\:/CvMaker/app/src/main/res/layout/update_dialog.xml" value="0.14" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
