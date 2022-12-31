@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="cvmaker.com.fragment.Main_Fragment"
+        android:label="Main_Fragment" >
+        <action
+            android:id="@+id/action_main_Fragment_to_pdfLayoutFragment"
+            app:destination="@id/pdfLayoutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfLayoutFragment"
+        android:name="cvmaker.com.fragment.PdfLayoutFragment"
+        android:label="PdfLayoutFragment" />
+    <fragment
+        android:id="@+id/onlineSheba"
+        android:name="cvmaker.com.fragment.OnlineSheba"
+        android:label="OnlineSheba" >
+        <action
+            android:id="@+id/action_onlineSheba_self"
+            app:destination="@id/onlineSheba" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="cvmaker.com.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_onlineSheba"
+            app:destination="@id/onlineSheba" />
+        <action
+            android:id="@+id/action_homeFragment_to_main_Fragment"
+            app:destination="@id/main_Fragment" />
+    </fragment>
+</navigation>

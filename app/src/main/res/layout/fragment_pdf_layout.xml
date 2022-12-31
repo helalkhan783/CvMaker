@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragment.PdfLayoutFragment">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/designOneLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include
+                        android:id="@+id/designOne"
+                        layout="@layout/design_one" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/designTwoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include
+                        android:id="@+id/designTwo"
+                        layout="@layout/design_two" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+             android:gravity="center">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/save" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Template : "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/templateOne"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue_col"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_one_size" />
+
+                <TextView
+                    android:id="@+id/templateTwo"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_one_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

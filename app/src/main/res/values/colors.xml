@@ -7,8 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#DADDDD</color>
     <color name="gray_one">#828283</color>
     <color name="level_color">#FFFFFFFF</color>
     <color name="view_color">#F8E329</color>
-    <color name="text_color">#10DBED</color>
+    <color name="police_col">#1C2755</color>
+    <color name="text_color">#FF000000</color>
+    <color name="blue_col">#3701B2</color>
+    <color name="red">#7C0A01</color>
+    <color name="red1">#FFC107</color>
+    <color name="et_col">#E5E9EC</color>
+    <color name="colorLoginStart">#339ed6</color>
+
 </resources>

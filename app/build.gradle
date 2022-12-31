@@ -52,4 +52,14 @@ dependencies {
     implementation 'com.github.dhaval2404:imagepicker:2.0'
 
 
+    /**
+     * for navigation component
+     */
+    def nav_version = "2.5.3"
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    // neumorphism ui design
+    implementation 'com.github.fornewid:neumorphism:0.2.1'
+
+
 }

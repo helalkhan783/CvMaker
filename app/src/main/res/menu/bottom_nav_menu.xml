@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+        android:id="@+id/menu"
+        android:icon="@drawable/menu_ic"
+        android:title="MENU"/>
+    <item
+        android:id="@+id/resume"
+        android:icon="@drawable/online_sheba_ic"
+        android:title="CREATE CV" />
+
+
+
+
+</menu>

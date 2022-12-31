@@ -13,4 +13,8 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="rippleTheme">
+        <item name="colorControlHighlight">@color/colorLoginStart</item>
+    </style>
 </resources>
