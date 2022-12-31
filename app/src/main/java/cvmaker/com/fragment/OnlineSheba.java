@@ -1,5 +1,7 @@
 package cvmaker.com.fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.databinding.DataBindingUtil;
@@ -16,6 +18,7 @@ import java.util.List;
 
 import cvmaker.com.R;
 import cvmaker.com.adapter.AmbulanceAdapter;
+import cvmaker.com.adapter.CarAdapter;
 import cvmaker.com.adapter.CurrentAdapter;
 import cvmaker.com.adapter.FireServiceAdapter;
 import cvmaker.com.adapter.HospitalAdapter;
@@ -23,6 +26,7 @@ import cvmaker.com.adapter.PoliceAdapter;
 import cvmaker.com.adapter.ThanaAdapter;
 import cvmaker.com.all_list.CurrentList;
 import cvmaker.com.all_list.PoliceList;
+import cvmaker.com.all_list.RentCarList;
 import cvmaker.com.all_list.ambulance_list.AmbulanceList;
 import cvmaker.com.all_list.fireservice_list.FireserviceList;
 import cvmaker.com.databinding.FragmentOnlineShebaBinding;
@@ -32,6 +36,7 @@ import cvmaker.com.model.CurrentModel;
 import cvmaker.com.model.FireServiceModel;
 import cvmaker.com.model.HospitalMode;
 import cvmaker.com.model.PoliceModel;
+import cvmaker.com.model.RentCarModel;
 import cvmaker.com.utils.BholaServiceUtil;
 import cvmaker.com.utils.OnlineShebaUtil;
 
@@ -64,6 +69,8 @@ public class OnlineSheba extends BaseFragment {
 
             binding.toplayout.setVisibility(View.VISIBLE);
             binding.onlineShevaRv.setVisibility(View.GONE);
+            binding.subOnlineShevaRv.setHasFixedSize(true);
+            binding.subOnlineShevaRv.setLayoutManager(new LinearLayoutManager(getContext()));
 
 
             if (portion.equals(OnlineShebaUtil.bholaSadar)) {
@@ -91,7 +98,13 @@ public class OnlineSheba extends BaseFragment {
 
 
         }
-
+        binding.emergencyCall.setOnClickListener(view -> {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:" + 999));
+            if (intent.resolveActivity(getContext().getPackageManager()) != null) {
+                getContext().startActivity(intent);
+            }
+        });
 
         return binding.getRoot();
     }
@@ -113,7 +126,7 @@ public class OnlineSheba extends BaseFragment {
             setAmbulaceData(AmbulanceList.daulatkhaAmbulance());
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(RentCarList.daulatkhanRentCar());
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
@@ -137,7 +150,7 @@ public class OnlineSheba extends BaseFragment {
             setAmbulaceData(AmbulanceList.monpuraAmbulance());
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(null);
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
@@ -161,7 +174,7 @@ public class OnlineSheba extends BaseFragment {
             setAmbulaceData(AmbulanceList.charfashionAmbulace());
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(RentCarList.charfassionRentCar());
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
@@ -186,7 +199,7 @@ public class OnlineSheba extends BaseFragment {
             setAmbulaceData(AmbulanceList.tajumuddinAmbulance());
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(RentCarList.tajummoddinRentCar());
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
@@ -213,7 +226,7 @@ public class OnlineSheba extends BaseFragment {
             Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(RentCarList.lalmohonRentCar());
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
@@ -238,7 +251,7 @@ public class OnlineSheba extends BaseFragment {
             setAmbulaceData(AmbulanceList.borhunuddinAmbulance());
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(RentCarList.borhunuddinRentCar());
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
@@ -264,13 +277,27 @@ public class OnlineSheba extends BaseFragment {
             setAmbulaceData(AmbulanceList.bholaAmbulacelist());
             return;
         } else if (currentName.equals(BholaServiceUtil.rentCar)) {
-            Toast.makeText(getContext(), "" + portion + "\n" + currentName, Toast.LENGTH_SHORT).show();
+            setRentCarData(RentCarList.bholaRentCar());
             return;
         } else {
             binding.upazillaName.setText("" + portion + "র জরুরি বিদ্যুৎ");
             setBidyutData(CurrentList.bholaCurrent());
 
         }
+    }
+
+    private void setRentCarData(List<RentCarModel> carModelList) {
+        if (carModelList == null) {
+            binding.subOnlineShevaRv.setVisibility(View.GONE);
+            binding.dataNotFound.setVisibility(View.VISIBLE);
+            return;
+        }
+        binding.dataNotFound.setVisibility(View.GONE);
+        binding.subOnlineShevaRv.setVisibility(View.VISIBLE);
+        CarAdapter adapter = new CarAdapter(getActivity(), carModelList, portion);
+        binding.subOnlineShevaRv.setAdapter(adapter);
+
+
     }
 
     private void setBidyutData(List<CurrentModel> currentModelList) {
@@ -282,25 +309,18 @@ public class OnlineSheba extends BaseFragment {
         }
         binding.dataNotFound.setVisibility(View.GONE);
         binding.subOnlineShevaRv.setVisibility(View.VISIBLE);
-        binding.subOnlineShevaRv.setHasFixedSize(true);
-        binding.subOnlineShevaRv.setLayoutManager(new LinearLayoutManager(getContext()));
         CurrentAdapter adapter = new CurrentAdapter(getActivity(), currentModelList, portion);
         binding.subOnlineShevaRv.setAdapter(adapter);
 
     }
 
     private void setPoliceData(List<PoliceModel> policeModels) {
-
-        binding.subOnlineShevaRv.setHasFixedSize(true);
-        binding.subOnlineShevaRv.setLayoutManager(new LinearLayoutManager(getContext()));
         PoliceAdapter adapter = new PoliceAdapter(getActivity(), policeModels, portion);
         binding.subOnlineShevaRv.setAdapter(adapter);
 
     }
 
     private void fireServiceDataSet(List<FireServiceModel> fireserviceList) {
-        binding.subOnlineShevaRv.setHasFixedSize(true);
-        binding.subOnlineShevaRv.setLayoutManager(new LinearLayoutManager(getContext()));
         FireServiceAdapter adapter = new FireServiceAdapter(getActivity(), fireserviceList, portion);
         binding.subOnlineShevaRv.setAdapter(adapter);
 
@@ -316,9 +336,6 @@ public class OnlineSheba extends BaseFragment {
         }
         binding.dataNotFound.setVisibility(View.GONE);
         binding.subOnlineShevaRv.setVisibility(View.VISIBLE);
-
-        binding.subOnlineShevaRv.setHasFixedSize(true);
-        binding.subOnlineShevaRv.setLayoutManager(new LinearLayoutManager(getContext()));
         AmbulanceAdapter adapter = new AmbulanceAdapter(getActivity(), ambulanceModelList, portion);
         binding.subOnlineShevaRv.setAdapter(adapter);
 
@@ -326,8 +343,6 @@ public class OnlineSheba extends BaseFragment {
     }
 
     private void setHospitalData(List<HospitalMode> hospitalList) {
-        binding.subOnlineShevaRv.setHasFixedSize(true);
-        binding.subOnlineShevaRv.setLayoutManager(new LinearLayoutManager(getContext()));
         HospitalAdapter adapter = new HospitalAdapter(getActivity(), hospitalList, portion);
         binding.subOnlineShevaRv.setAdapter(adapter);
 
